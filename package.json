@@ -2,27 +2,25 @@
   "name": "impipe-frontend",
   "version": "0.1.0",
   "private": true,
-  "main": "src/electron/main.js",
   "homepage": "./",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
     "concurrently": "^5.1.0",
     "gojs": "^2.1.11",
     "gojs-react": "^1.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.0",
-    "wait-on": "^4.0.1"
+    "wait-on": "^4.0.1",
+    "zeromq": "^6.0.0-beta.6",
+    "zerorpc": "^0.9.8"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron": "electron .",
-    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\""
+    "electron": "../frontend/node_modules/.bin/electron ../frontend",
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && npm run electron\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,7 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "electron": "^8.1.1"
-  }
+  "devDependencies": {}
 }
