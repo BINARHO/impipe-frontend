@@ -15,12 +15,14 @@
     "zerorpc": "^0.9.8"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron": "../frontend/node_modules/.bin/electron ../frontend",
-    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && npm run electron\""
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && npm run electron\"",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css", 
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,5 +39,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
+  }
 }
