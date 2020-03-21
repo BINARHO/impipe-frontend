@@ -238,7 +238,7 @@ class App extends React.Component {
                     onDiagramEvent={this.handleGraphChange}
                     onModelChange={this.handleModelChange}
                 />
-                <div style={{color: "white"}}>
+                <div className="bg-blue-500" style={{color: "white"}}>
                     <h1>Python Data:</h1>
                     <h2>
                         {this.state.console}
