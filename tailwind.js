@@ -37,6 +37,14 @@ module.exports = {
         800: '#9b2c2c',
         900: '#742a2a',
       },
+      apple: {
+        100: 'rgb(142, 142, 147)',
+        200: 'rgb(99, 99, 102)',
+        300: 'rgb(72, 72, 74)',
+        400: 'rgb(58, 58, 60)',
+        500: 'rgb(44, 44, 46)',
+        600: 'rgb(28, 28, 30)',
+      },
       orange: {
         100: '#fffaf0',
         200: '#feebc8',
@@ -267,6 +275,7 @@ module.exports = {
     height: theme => ({
       auto: 'auto',
       ...theme('spacing'),
+      '1/2': '50%',
       full: '100%',
       screen: '100vh',
     }),

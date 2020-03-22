@@ -754,6 +754,30 @@ video {
   background-color: #742a2a;
 }
 
+.bg-apple-100 {
+  background-color: rgb(142, 142, 147);
+}
+
+.bg-apple-200 {
+  background-color: rgb(99, 99, 102);
+}
+
+.bg-apple-300 {
+  background-color: rgb(72, 72, 74);
+}
+
+.bg-apple-400 {
+  background-color: rgb(58, 58, 60);
+}
+
+.bg-apple-500 {
+  background-color: rgb(44, 44, 46);
+}
+
+.bg-apple-600 {
+  background-color: rgb(28, 28, 30);
+}
+
 .bg-orange-100 {
   background-color: #fffaf0;
 }
@@ -1126,6 +1150,30 @@ video {
   background-color: #742a2a;
 }
 
+.hover\:bg-apple-100:hover {
+  background-color: rgb(142, 142, 147);
+}
+
+.hover\:bg-apple-200:hover {
+  background-color: rgb(99, 99, 102);
+}
+
+.hover\:bg-apple-300:hover {
+  background-color: rgb(72, 72, 74);
+}
+
+.hover\:bg-apple-400:hover {
+  background-color: rgb(58, 58, 60);
+}
+
+.hover\:bg-apple-500:hover {
+  background-color: rgb(44, 44, 46);
+}
+
+.hover\:bg-apple-600:hover {
+  background-color: rgb(28, 28, 30);
+}
+
 .hover\:bg-orange-100:hover {
   background-color: #fffaf0;
 }
@@ -1496,6 +1544,30 @@ video {
 
 .focus\:bg-red-900:focus {
   background-color: #742a2a;
+}
+
+.focus\:bg-apple-100:focus {
+  background-color: rgb(142, 142, 147);
+}
+
+.focus\:bg-apple-200:focus {
+  background-color: rgb(99, 99, 102);
+}
+
+.focus\:bg-apple-300:focus {
+  background-color: rgb(72, 72, 74);
+}
+
+.focus\:bg-apple-400:focus {
+  background-color: rgb(58, 58, 60);
+}
+
+.focus\:bg-apple-500:focus {
+  background-color: rgb(44, 44, 46);
+}
+
+.focus\:bg-apple-600:focus {
+  background-color: rgb(28, 28, 30);
 }
 
 .focus\:bg-orange-100:focus {
@@ -1950,6 +2022,30 @@ video {
   border-color: #742a2a;
 }
 
+.border-apple-100 {
+  border-color: rgb(142, 142, 147);
+}
+
+.border-apple-200 {
+  border-color: rgb(99, 99, 102);
+}
+
+.border-apple-300 {
+  border-color: rgb(72, 72, 74);
+}
+
+.border-apple-400 {
+  border-color: rgb(58, 58, 60);
+}
+
+.border-apple-500 {
+  border-color: rgb(44, 44, 46);
+}
+
+.border-apple-600 {
+  border-color: rgb(28, 28, 30);
+}
+
 .border-orange-100 {
   border-color: #fffaf0;
 }
@@ -2322,6 +2418,30 @@ video {
   border-color: #742a2a;
 }
 
+.hover\:border-apple-100:hover {
+  border-color: rgb(142, 142, 147);
+}
+
+.hover\:border-apple-200:hover {
+  border-color: rgb(99, 99, 102);
+}
+
+.hover\:border-apple-300:hover {
+  border-color: rgb(72, 72, 74);
+}
+
+.hover\:border-apple-400:hover {
+  border-color: rgb(58, 58, 60);
+}
+
+.hover\:border-apple-500:hover {
+  border-color: rgb(44, 44, 46);
+}
+
+.hover\:border-apple-600:hover {
+  border-color: rgb(28, 28, 30);
+}
+
 .hover\:border-orange-100:hover {
   border-color: #fffaf0;
 }
@@ -2692,6 +2812,30 @@ video {
 
 .focus\:border-red-900:focus {
   border-color: #742a2a;
+}
+
+.focus\:border-apple-100:focus {
+  border-color: rgb(142, 142, 147);
+}
+
+.focus\:border-apple-200:focus {
+  border-color: rgb(99, 99, 102);
+}
+
+.focus\:border-apple-300:focus {
+  border-color: rgb(72, 72, 74);
+}
+
+.focus\:border-apple-400:focus {
+  border-color: rgb(58, 58, 60);
+}
+
+.focus\:border-apple-500:focus {
+  border-color: rgb(44, 44, 46);
+}
+
+.focus\:border-apple-600:focus {
+  border-color: rgb(28, 28, 30);
 }
 
 .focus\:border-orange-100:focus {
@@ -3874,6 +4018,10 @@ video {
 
 .h-px {
   height: 1px;
+}
+
+.h-1\/2 {
+  height: 50%;
 }
 
 .h-full {
@@ -6026,6 +6174,30 @@ video {
   color: #742a2a;
 }
 
+.placeholder-apple-100::placeholder {
+  color: rgb(142, 142, 147);
+}
+
+.placeholder-apple-200::placeholder {
+  color: rgb(99, 99, 102);
+}
+
+.placeholder-apple-300::placeholder {
+  color: rgb(72, 72, 74);
+}
+
+.placeholder-apple-400::placeholder {
+  color: rgb(58, 58, 60);
+}
+
+.placeholder-apple-500::placeholder {
+  color: rgb(44, 44, 46);
+}
+
+.placeholder-apple-600::placeholder {
+  color: rgb(28, 28, 30);
+}
+
 .placeholder-orange-100::placeholder {
   color: #fffaf0;
 }
@@ -6396,6 +6568,30 @@ video {
 
 .focus\:placeholder-red-900:focus::placeholder {
   color: #742a2a;
+}
+
+.focus\:placeholder-apple-100:focus::placeholder {
+  color: rgb(142, 142, 147);
+}
+
+.focus\:placeholder-apple-200:focus::placeholder {
+  color: rgb(99, 99, 102);
+}
+
+.focus\:placeholder-apple-300:focus::placeholder {
+  color: rgb(72, 72, 74);
+}
+
+.focus\:placeholder-apple-400:focus::placeholder {
+  color: rgb(58, 58, 60);
+}
+
+.focus\:placeholder-apple-500:focus::placeholder {
+  color: rgb(44, 44, 46);
+}
+
+.focus\:placeholder-apple-600:focus::placeholder {
+  color: rgb(28, 28, 30);
 }
 
 .focus\:placeholder-orange-100:focus::placeholder {
@@ -7045,6 +7241,30 @@ video {
   color: #742a2a;
 }
 
+.text-apple-100 {
+  color: rgb(142, 142, 147);
+}
+
+.text-apple-200 {
+  color: rgb(99, 99, 102);
+}
+
+.text-apple-300 {
+  color: rgb(72, 72, 74);
+}
+
+.text-apple-400 {
+  color: rgb(58, 58, 60);
+}
+
+.text-apple-500 {
+  color: rgb(44, 44, 46);
+}
+
+.text-apple-600 {
+  color: rgb(28, 28, 30);
+}
+
 .text-orange-100 {
   color: #fffaf0;
 }
@@ -7417,6 +7637,30 @@ video {
   color: #742a2a;
 }
 
+.hover\:text-apple-100:hover {
+  color: rgb(142, 142, 147);
+}
+
+.hover\:text-apple-200:hover {
+  color: rgb(99, 99, 102);
+}
+
+.hover\:text-apple-300:hover {
+  color: rgb(72, 72, 74);
+}
+
+.hover\:text-apple-400:hover {
+  color: rgb(58, 58, 60);
+}
+
+.hover\:text-apple-500:hover {
+  color: rgb(44, 44, 46);
+}
+
+.hover\:text-apple-600:hover {
+  color: rgb(28, 28, 30);
+}
+
 .hover\:text-orange-100:hover {
   color: #fffaf0;
 }
@@ -7787,6 +8031,30 @@ video {
 
 .focus\:text-red-900:focus {
   color: #742a2a;
+}
+
+.focus\:text-apple-100:focus {
+  color: rgb(142, 142, 147);
+}
+
+.focus\:text-apple-200:focus {
+  color: rgb(99, 99, 102);
+}
+
+.focus\:text-apple-300:focus {
+  color: rgb(72, 72, 74);
+}
+
+.focus\:text-apple-400:focus {
+  color: rgb(58, 58, 60);
+}
+
+.focus\:text-apple-500:focus {
+  color: rgb(44, 44, 46);
+}
+
+.focus\:text-apple-600:focus {
+  color: rgb(28, 28, 30);
 }
 
 .focus\:text-orange-100:focus {
@@ -11061,6 +11329,30 @@ video {
     background-color: #742a2a;
   }
 
+  .sm\:bg-apple-100 {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .sm\:bg-apple-200 {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .sm\:bg-apple-300 {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .sm\:bg-apple-400 {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .sm\:bg-apple-500 {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .sm\:bg-apple-600 {
+    background-color: rgb(28, 28, 30);
+  }
+
   .sm\:bg-orange-100 {
     background-color: #fffaf0;
   }
@@ -11433,6 +11725,30 @@ video {
     background-color: #742a2a;
   }
 
+  .sm\:hover\:bg-apple-100:hover {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .sm\:hover\:bg-apple-200:hover {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .sm\:hover\:bg-apple-300:hover {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .sm\:hover\:bg-apple-400:hover {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .sm\:hover\:bg-apple-500:hover {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .sm\:hover\:bg-apple-600:hover {
+    background-color: rgb(28, 28, 30);
+  }
+
   .sm\:hover\:bg-orange-100:hover {
     background-color: #fffaf0;
   }
@@ -11803,6 +12119,30 @@ video {
 
   .sm\:focus\:bg-red-900:focus {
     background-color: #742a2a;
+  }
+
+  .sm\:focus\:bg-apple-100:focus {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .sm\:focus\:bg-apple-200:focus {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .sm\:focus\:bg-apple-300:focus {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .sm\:focus\:bg-apple-400:focus {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .sm\:focus\:bg-apple-500:focus {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .sm\:focus\:bg-apple-600:focus {
+    background-color: rgb(28, 28, 30);
   }
 
   .sm\:focus\:bg-orange-100:focus {
@@ -12257,6 +12597,30 @@ video {
     border-color: #742a2a;
   }
 
+  .sm\:border-apple-100 {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .sm\:border-apple-200 {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .sm\:border-apple-300 {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .sm\:border-apple-400 {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .sm\:border-apple-500 {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .sm\:border-apple-600 {
+    border-color: rgb(28, 28, 30);
+  }
+
   .sm\:border-orange-100 {
     border-color: #fffaf0;
   }
@@ -12629,6 +12993,30 @@ video {
     border-color: #742a2a;
   }
 
+  .sm\:hover\:border-apple-100:hover {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .sm\:hover\:border-apple-200:hover {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .sm\:hover\:border-apple-300:hover {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .sm\:hover\:border-apple-400:hover {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .sm\:hover\:border-apple-500:hover {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .sm\:hover\:border-apple-600:hover {
+    border-color: rgb(28, 28, 30);
+  }
+
   .sm\:hover\:border-orange-100:hover {
     border-color: #fffaf0;
   }
@@ -12999,6 +13387,30 @@ video {
 
   .sm\:focus\:border-red-900:focus {
     border-color: #742a2a;
+  }
+
+  .sm\:focus\:border-apple-100:focus {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .sm\:focus\:border-apple-200:focus {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .sm\:focus\:border-apple-300:focus {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .sm\:focus\:border-apple-400:focus {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .sm\:focus\:border-apple-500:focus {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .sm\:focus\:border-apple-600:focus {
+    border-color: rgb(28, 28, 30);
   }
 
   .sm\:focus\:border-orange-100:focus {
@@ -14181,6 +14593,10 @@ video {
 
   .sm\:h-px {
     height: 1px;
+  }
+
+  .sm\:h-1\/2 {
+    height: 50%;
   }
 
   .sm\:h-full {
@@ -16333,6 +16749,30 @@ video {
     color: #742a2a;
   }
 
+  .sm\:placeholder-apple-100::placeholder {
+    color: rgb(142, 142, 147);
+  }
+
+  .sm\:placeholder-apple-200::placeholder {
+    color: rgb(99, 99, 102);
+  }
+
+  .sm\:placeholder-apple-300::placeholder {
+    color: rgb(72, 72, 74);
+  }
+
+  .sm\:placeholder-apple-400::placeholder {
+    color: rgb(58, 58, 60);
+  }
+
+  .sm\:placeholder-apple-500::placeholder {
+    color: rgb(44, 44, 46);
+  }
+
+  .sm\:placeholder-apple-600::placeholder {
+    color: rgb(28, 28, 30);
+  }
+
   .sm\:placeholder-orange-100::placeholder {
     color: #fffaf0;
   }
@@ -16703,6 +17143,30 @@ video {
 
   .sm\:focus\:placeholder-red-900:focus::placeholder {
     color: #742a2a;
+  }
+
+  .sm\:focus\:placeholder-apple-100:focus::placeholder {
+    color: rgb(142, 142, 147);
+  }
+
+  .sm\:focus\:placeholder-apple-200:focus::placeholder {
+    color: rgb(99, 99, 102);
+  }
+
+  .sm\:focus\:placeholder-apple-300:focus::placeholder {
+    color: rgb(72, 72, 74);
+  }
+
+  .sm\:focus\:placeholder-apple-400:focus::placeholder {
+    color: rgb(58, 58, 60);
+  }
+
+  .sm\:focus\:placeholder-apple-500:focus::placeholder {
+    color: rgb(44, 44, 46);
+  }
+
+  .sm\:focus\:placeholder-apple-600:focus::placeholder {
+    color: rgb(28, 28, 30);
   }
 
   .sm\:focus\:placeholder-orange-100:focus::placeholder {
@@ -17352,6 +17816,30 @@ video {
     color: #742a2a;
   }
 
+  .sm\:text-apple-100 {
+    color: rgb(142, 142, 147);
+  }
+
+  .sm\:text-apple-200 {
+    color: rgb(99, 99, 102);
+  }
+
+  .sm\:text-apple-300 {
+    color: rgb(72, 72, 74);
+  }
+
+  .sm\:text-apple-400 {
+    color: rgb(58, 58, 60);
+  }
+
+  .sm\:text-apple-500 {
+    color: rgb(44, 44, 46);
+  }
+
+  .sm\:text-apple-600 {
+    color: rgb(28, 28, 30);
+  }
+
   .sm\:text-orange-100 {
     color: #fffaf0;
   }
@@ -17724,6 +18212,30 @@ video {
     color: #742a2a;
   }
 
+  .sm\:hover\:text-apple-100:hover {
+    color: rgb(142, 142, 147);
+  }
+
+  .sm\:hover\:text-apple-200:hover {
+    color: rgb(99, 99, 102);
+  }
+
+  .sm\:hover\:text-apple-300:hover {
+    color: rgb(72, 72, 74);
+  }
+
+  .sm\:hover\:text-apple-400:hover {
+    color: rgb(58, 58, 60);
+  }
+
+  .sm\:hover\:text-apple-500:hover {
+    color: rgb(44, 44, 46);
+  }
+
+  .sm\:hover\:text-apple-600:hover {
+    color: rgb(28, 28, 30);
+  }
+
   .sm\:hover\:text-orange-100:hover {
     color: #fffaf0;
   }
@@ -18094,6 +18606,30 @@ video {
 
   .sm\:focus\:text-red-900:focus {
     color: #742a2a;
+  }
+
+  .sm\:focus\:text-apple-100:focus {
+    color: rgb(142, 142, 147);
+  }
+
+  .sm\:focus\:text-apple-200:focus {
+    color: rgb(99, 99, 102);
+  }
+
+  .sm\:focus\:text-apple-300:focus {
+    color: rgb(72, 72, 74);
+  }
+
+  .sm\:focus\:text-apple-400:focus {
+    color: rgb(58, 58, 60);
+  }
+
+  .sm\:focus\:text-apple-500:focus {
+    color: rgb(44, 44, 46);
+  }
+
+  .sm\:focus\:text-apple-600:focus {
+    color: rgb(28, 28, 30);
   }
 
   .sm\:focus\:text-orange-100:focus {
@@ -21369,6 +21905,30 @@ video {
     background-color: #742a2a;
   }
 
+  .md\:bg-apple-100 {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .md\:bg-apple-200 {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .md\:bg-apple-300 {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .md\:bg-apple-400 {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .md\:bg-apple-500 {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .md\:bg-apple-600 {
+    background-color: rgb(28, 28, 30);
+  }
+
   .md\:bg-orange-100 {
     background-color: #fffaf0;
   }
@@ -21741,6 +22301,30 @@ video {
     background-color: #742a2a;
   }
 
+  .md\:hover\:bg-apple-100:hover {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .md\:hover\:bg-apple-200:hover {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .md\:hover\:bg-apple-300:hover {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .md\:hover\:bg-apple-400:hover {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .md\:hover\:bg-apple-500:hover {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .md\:hover\:bg-apple-600:hover {
+    background-color: rgb(28, 28, 30);
+  }
+
   .md\:hover\:bg-orange-100:hover {
     background-color: #fffaf0;
   }
@@ -22111,6 +22695,30 @@ video {
 
   .md\:focus\:bg-red-900:focus {
     background-color: #742a2a;
+  }
+
+  .md\:focus\:bg-apple-100:focus {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .md\:focus\:bg-apple-200:focus {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .md\:focus\:bg-apple-300:focus {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .md\:focus\:bg-apple-400:focus {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .md\:focus\:bg-apple-500:focus {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .md\:focus\:bg-apple-600:focus {
+    background-color: rgb(28, 28, 30);
   }
 
   .md\:focus\:bg-orange-100:focus {
@@ -22565,6 +23173,30 @@ video {
     border-color: #742a2a;
   }
 
+  .md\:border-apple-100 {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .md\:border-apple-200 {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .md\:border-apple-300 {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .md\:border-apple-400 {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .md\:border-apple-500 {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .md\:border-apple-600 {
+    border-color: rgb(28, 28, 30);
+  }
+
   .md\:border-orange-100 {
     border-color: #fffaf0;
   }
@@ -22937,6 +23569,30 @@ video {
     border-color: #742a2a;
   }
 
+  .md\:hover\:border-apple-100:hover {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .md\:hover\:border-apple-200:hover {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .md\:hover\:border-apple-300:hover {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .md\:hover\:border-apple-400:hover {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .md\:hover\:border-apple-500:hover {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .md\:hover\:border-apple-600:hover {
+    border-color: rgb(28, 28, 30);
+  }
+
   .md\:hover\:border-orange-100:hover {
     border-color: #fffaf0;
   }
@@ -23307,6 +23963,30 @@ video {
 
   .md\:focus\:border-red-900:focus {
     border-color: #742a2a;
+  }
+
+  .md\:focus\:border-apple-100:focus {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .md\:focus\:border-apple-200:focus {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .md\:focus\:border-apple-300:focus {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .md\:focus\:border-apple-400:focus {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .md\:focus\:border-apple-500:focus {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .md\:focus\:border-apple-600:focus {
+    border-color: rgb(28, 28, 30);
   }
 
   .md\:focus\:border-orange-100:focus {
@@ -24489,6 +25169,10 @@ video {
 
   .md\:h-px {
     height: 1px;
+  }
+
+  .md\:h-1\/2 {
+    height: 50%;
   }
 
   .md\:h-full {
@@ -26641,6 +27325,30 @@ video {
     color: #742a2a;
   }
 
+  .md\:placeholder-apple-100::placeholder {
+    color: rgb(142, 142, 147);
+  }
+
+  .md\:placeholder-apple-200::placeholder {
+    color: rgb(99, 99, 102);
+  }
+
+  .md\:placeholder-apple-300::placeholder {
+    color: rgb(72, 72, 74);
+  }
+
+  .md\:placeholder-apple-400::placeholder {
+    color: rgb(58, 58, 60);
+  }
+
+  .md\:placeholder-apple-500::placeholder {
+    color: rgb(44, 44, 46);
+  }
+
+  .md\:placeholder-apple-600::placeholder {
+    color: rgb(28, 28, 30);
+  }
+
   .md\:placeholder-orange-100::placeholder {
     color: #fffaf0;
   }
@@ -27011,6 +27719,30 @@ video {
 
   .md\:focus\:placeholder-red-900:focus::placeholder {
     color: #742a2a;
+  }
+
+  .md\:focus\:placeholder-apple-100:focus::placeholder {
+    color: rgb(142, 142, 147);
+  }
+
+  .md\:focus\:placeholder-apple-200:focus::placeholder {
+    color: rgb(99, 99, 102);
+  }
+
+  .md\:focus\:placeholder-apple-300:focus::placeholder {
+    color: rgb(72, 72, 74);
+  }
+
+  .md\:focus\:placeholder-apple-400:focus::placeholder {
+    color: rgb(58, 58, 60);
+  }
+
+  .md\:focus\:placeholder-apple-500:focus::placeholder {
+    color: rgb(44, 44, 46);
+  }
+
+  .md\:focus\:placeholder-apple-600:focus::placeholder {
+    color: rgb(28, 28, 30);
   }
 
   .md\:focus\:placeholder-orange-100:focus::placeholder {
@@ -27660,6 +28392,30 @@ video {
     color: #742a2a;
   }
 
+  .md\:text-apple-100 {
+    color: rgb(142, 142, 147);
+  }
+
+  .md\:text-apple-200 {
+    color: rgb(99, 99, 102);
+  }
+
+  .md\:text-apple-300 {
+    color: rgb(72, 72, 74);
+  }
+
+  .md\:text-apple-400 {
+    color: rgb(58, 58, 60);
+  }
+
+  .md\:text-apple-500 {
+    color: rgb(44, 44, 46);
+  }
+
+  .md\:text-apple-600 {
+    color: rgb(28, 28, 30);
+  }
+
   .md\:text-orange-100 {
     color: #fffaf0;
   }
@@ -28032,6 +28788,30 @@ video {
     color: #742a2a;
   }
 
+  .md\:hover\:text-apple-100:hover {
+    color: rgb(142, 142, 147);
+  }
+
+  .md\:hover\:text-apple-200:hover {
+    color: rgb(99, 99, 102);
+  }
+
+  .md\:hover\:text-apple-300:hover {
+    color: rgb(72, 72, 74);
+  }
+
+  .md\:hover\:text-apple-400:hover {
+    color: rgb(58, 58, 60);
+  }
+
+  .md\:hover\:text-apple-500:hover {
+    color: rgb(44, 44, 46);
+  }
+
+  .md\:hover\:text-apple-600:hover {
+    color: rgb(28, 28, 30);
+  }
+
   .md\:hover\:text-orange-100:hover {
     color: #fffaf0;
   }
@@ -28402,6 +29182,30 @@ video {
 
   .md\:focus\:text-red-900:focus {
     color: #742a2a;
+  }
+
+  .md\:focus\:text-apple-100:focus {
+    color: rgb(142, 142, 147);
+  }
+
+  .md\:focus\:text-apple-200:focus {
+    color: rgb(99, 99, 102);
+  }
+
+  .md\:focus\:text-apple-300:focus {
+    color: rgb(72, 72, 74);
+  }
+
+  .md\:focus\:text-apple-400:focus {
+    color: rgb(58, 58, 60);
+  }
+
+  .md\:focus\:text-apple-500:focus {
+    color: rgb(44, 44, 46);
+  }
+
+  .md\:focus\:text-apple-600:focus {
+    color: rgb(28, 28, 30);
   }
 
   .md\:focus\:text-orange-100:focus {
@@ -31677,6 +32481,30 @@ video {
     background-color: #742a2a;
   }
 
+  .lg\:bg-apple-100 {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .lg\:bg-apple-200 {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .lg\:bg-apple-300 {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .lg\:bg-apple-400 {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .lg\:bg-apple-500 {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .lg\:bg-apple-600 {
+    background-color: rgb(28, 28, 30);
+  }
+
   .lg\:bg-orange-100 {
     background-color: #fffaf0;
   }
@@ -32049,6 +32877,30 @@ video {
     background-color: #742a2a;
   }
 
+  .lg\:hover\:bg-apple-100:hover {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .lg\:hover\:bg-apple-200:hover {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .lg\:hover\:bg-apple-300:hover {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .lg\:hover\:bg-apple-400:hover {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .lg\:hover\:bg-apple-500:hover {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .lg\:hover\:bg-apple-600:hover {
+    background-color: rgb(28, 28, 30);
+  }
+
   .lg\:hover\:bg-orange-100:hover {
     background-color: #fffaf0;
   }
@@ -32419,6 +33271,30 @@ video {
 
   .lg\:focus\:bg-red-900:focus {
     background-color: #742a2a;
+  }
+
+  .lg\:focus\:bg-apple-100:focus {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .lg\:focus\:bg-apple-200:focus {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .lg\:focus\:bg-apple-300:focus {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .lg\:focus\:bg-apple-400:focus {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .lg\:focus\:bg-apple-500:focus {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .lg\:focus\:bg-apple-600:focus {
+    background-color: rgb(28, 28, 30);
   }
 
   .lg\:focus\:bg-orange-100:focus {
@@ -32873,6 +33749,30 @@ video {
     border-color: #742a2a;
   }
 
+  .lg\:border-apple-100 {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .lg\:border-apple-200 {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .lg\:border-apple-300 {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .lg\:border-apple-400 {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .lg\:border-apple-500 {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .lg\:border-apple-600 {
+    border-color: rgb(28, 28, 30);
+  }
+
   .lg\:border-orange-100 {
     border-color: #fffaf0;
   }
@@ -33245,6 +34145,30 @@ video {
     border-color: #742a2a;
   }
 
+  .lg\:hover\:border-apple-100:hover {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .lg\:hover\:border-apple-200:hover {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .lg\:hover\:border-apple-300:hover {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .lg\:hover\:border-apple-400:hover {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .lg\:hover\:border-apple-500:hover {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .lg\:hover\:border-apple-600:hover {
+    border-color: rgb(28, 28, 30);
+  }
+
   .lg\:hover\:border-orange-100:hover {
     border-color: #fffaf0;
   }
@@ -33615,6 +34539,30 @@ video {
 
   .lg\:focus\:border-red-900:focus {
     border-color: #742a2a;
+  }
+
+  .lg\:focus\:border-apple-100:focus {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .lg\:focus\:border-apple-200:focus {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .lg\:focus\:border-apple-300:focus {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .lg\:focus\:border-apple-400:focus {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .lg\:focus\:border-apple-500:focus {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .lg\:focus\:border-apple-600:focus {
+    border-color: rgb(28, 28, 30);
   }
 
   .lg\:focus\:border-orange-100:focus {
@@ -34797,6 +35745,10 @@ video {
 
   .lg\:h-px {
     height: 1px;
+  }
+
+  .lg\:h-1\/2 {
+    height: 50%;
   }
 
   .lg\:h-full {
@@ -36949,6 +37901,30 @@ video {
     color: #742a2a;
   }
 
+  .lg\:placeholder-apple-100::placeholder {
+    color: rgb(142, 142, 147);
+  }
+
+  .lg\:placeholder-apple-200::placeholder {
+    color: rgb(99, 99, 102);
+  }
+
+  .lg\:placeholder-apple-300::placeholder {
+    color: rgb(72, 72, 74);
+  }
+
+  .lg\:placeholder-apple-400::placeholder {
+    color: rgb(58, 58, 60);
+  }
+
+  .lg\:placeholder-apple-500::placeholder {
+    color: rgb(44, 44, 46);
+  }
+
+  .lg\:placeholder-apple-600::placeholder {
+    color: rgb(28, 28, 30);
+  }
+
   .lg\:placeholder-orange-100::placeholder {
     color: #fffaf0;
   }
@@ -37319,6 +38295,30 @@ video {
 
   .lg\:focus\:placeholder-red-900:focus::placeholder {
     color: #742a2a;
+  }
+
+  .lg\:focus\:placeholder-apple-100:focus::placeholder {
+    color: rgb(142, 142, 147);
+  }
+
+  .lg\:focus\:placeholder-apple-200:focus::placeholder {
+    color: rgb(99, 99, 102);
+  }
+
+  .lg\:focus\:placeholder-apple-300:focus::placeholder {
+    color: rgb(72, 72, 74);
+  }
+
+  .lg\:focus\:placeholder-apple-400:focus::placeholder {
+    color: rgb(58, 58, 60);
+  }
+
+  .lg\:focus\:placeholder-apple-500:focus::placeholder {
+    color: rgb(44, 44, 46);
+  }
+
+  .lg\:focus\:placeholder-apple-600:focus::placeholder {
+    color: rgb(28, 28, 30);
   }
 
   .lg\:focus\:placeholder-orange-100:focus::placeholder {
@@ -37968,6 +38968,30 @@ video {
     color: #742a2a;
   }
 
+  .lg\:text-apple-100 {
+    color: rgb(142, 142, 147);
+  }
+
+  .lg\:text-apple-200 {
+    color: rgb(99, 99, 102);
+  }
+
+  .lg\:text-apple-300 {
+    color: rgb(72, 72, 74);
+  }
+
+  .lg\:text-apple-400 {
+    color: rgb(58, 58, 60);
+  }
+
+  .lg\:text-apple-500 {
+    color: rgb(44, 44, 46);
+  }
+
+  .lg\:text-apple-600 {
+    color: rgb(28, 28, 30);
+  }
+
   .lg\:text-orange-100 {
     color: #fffaf0;
   }
@@ -38340,6 +39364,30 @@ video {
     color: #742a2a;
   }
 
+  .lg\:hover\:text-apple-100:hover {
+    color: rgb(142, 142, 147);
+  }
+
+  .lg\:hover\:text-apple-200:hover {
+    color: rgb(99, 99, 102);
+  }
+
+  .lg\:hover\:text-apple-300:hover {
+    color: rgb(72, 72, 74);
+  }
+
+  .lg\:hover\:text-apple-400:hover {
+    color: rgb(58, 58, 60);
+  }
+
+  .lg\:hover\:text-apple-500:hover {
+    color: rgb(44, 44, 46);
+  }
+
+  .lg\:hover\:text-apple-600:hover {
+    color: rgb(28, 28, 30);
+  }
+
   .lg\:hover\:text-orange-100:hover {
     color: #fffaf0;
   }
@@ -38710,6 +39758,30 @@ video {
 
   .lg\:focus\:text-red-900:focus {
     color: #742a2a;
+  }
+
+  .lg\:focus\:text-apple-100:focus {
+    color: rgb(142, 142, 147);
+  }
+
+  .lg\:focus\:text-apple-200:focus {
+    color: rgb(99, 99, 102);
+  }
+
+  .lg\:focus\:text-apple-300:focus {
+    color: rgb(72, 72, 74);
+  }
+
+  .lg\:focus\:text-apple-400:focus {
+    color: rgb(58, 58, 60);
+  }
+
+  .lg\:focus\:text-apple-500:focus {
+    color: rgb(44, 44, 46);
+  }
+
+  .lg\:focus\:text-apple-600:focus {
+    color: rgb(28, 28, 30);
   }
 
   .lg\:focus\:text-orange-100:focus {
@@ -41985,6 +43057,30 @@ video {
     background-color: #742a2a;
   }
 
+  .xl\:bg-apple-100 {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .xl\:bg-apple-200 {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .xl\:bg-apple-300 {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .xl\:bg-apple-400 {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .xl\:bg-apple-500 {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .xl\:bg-apple-600 {
+    background-color: rgb(28, 28, 30);
+  }
+
   .xl\:bg-orange-100 {
     background-color: #fffaf0;
   }
@@ -42357,6 +43453,30 @@ video {
     background-color: #742a2a;
   }
 
+  .xl\:hover\:bg-apple-100:hover {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .xl\:hover\:bg-apple-200:hover {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .xl\:hover\:bg-apple-300:hover {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .xl\:hover\:bg-apple-400:hover {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .xl\:hover\:bg-apple-500:hover {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .xl\:hover\:bg-apple-600:hover {
+    background-color: rgb(28, 28, 30);
+  }
+
   .xl\:hover\:bg-orange-100:hover {
     background-color: #fffaf0;
   }
@@ -42727,6 +43847,30 @@ video {
 
   .xl\:focus\:bg-red-900:focus {
     background-color: #742a2a;
+  }
+
+  .xl\:focus\:bg-apple-100:focus {
+    background-color: rgb(142, 142, 147);
+  }
+
+  .xl\:focus\:bg-apple-200:focus {
+    background-color: rgb(99, 99, 102);
+  }
+
+  .xl\:focus\:bg-apple-300:focus {
+    background-color: rgb(72, 72, 74);
+  }
+
+  .xl\:focus\:bg-apple-400:focus {
+    background-color: rgb(58, 58, 60);
+  }
+
+  .xl\:focus\:bg-apple-500:focus {
+    background-color: rgb(44, 44, 46);
+  }
+
+  .xl\:focus\:bg-apple-600:focus {
+    background-color: rgb(28, 28, 30);
   }
 
   .xl\:focus\:bg-orange-100:focus {
@@ -43181,6 +44325,30 @@ video {
     border-color: #742a2a;
   }
 
+  .xl\:border-apple-100 {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .xl\:border-apple-200 {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .xl\:border-apple-300 {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .xl\:border-apple-400 {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .xl\:border-apple-500 {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .xl\:border-apple-600 {
+    border-color: rgb(28, 28, 30);
+  }
+
   .xl\:border-orange-100 {
     border-color: #fffaf0;
   }
@@ -43553,6 +44721,30 @@ video {
     border-color: #742a2a;
   }
 
+  .xl\:hover\:border-apple-100:hover {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .xl\:hover\:border-apple-200:hover {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .xl\:hover\:border-apple-300:hover {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .xl\:hover\:border-apple-400:hover {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .xl\:hover\:border-apple-500:hover {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .xl\:hover\:border-apple-600:hover {
+    border-color: rgb(28, 28, 30);
+  }
+
   .xl\:hover\:border-orange-100:hover {
     border-color: #fffaf0;
   }
@@ -43923,6 +45115,30 @@ video {
 
   .xl\:focus\:border-red-900:focus {
     border-color: #742a2a;
+  }
+
+  .xl\:focus\:border-apple-100:focus {
+    border-color: rgb(142, 142, 147);
+  }
+
+  .xl\:focus\:border-apple-200:focus {
+    border-color: rgb(99, 99, 102);
+  }
+
+  .xl\:focus\:border-apple-300:focus {
+    border-color: rgb(72, 72, 74);
+  }
+
+  .xl\:focus\:border-apple-400:focus {
+    border-color: rgb(58, 58, 60);
+  }
+
+  .xl\:focus\:border-apple-500:focus {
+    border-color: rgb(44, 44, 46);
+  }
+
+  .xl\:focus\:border-apple-600:focus {
+    border-color: rgb(28, 28, 30);
   }
 
   .xl\:focus\:border-orange-100:focus {
@@ -45105,6 +46321,10 @@ video {
 
   .xl\:h-px {
     height: 1px;
+  }
+
+  .xl\:h-1\/2 {
+    height: 50%;
   }
 
   .xl\:h-full {
@@ -47257,6 +48477,30 @@ video {
     color: #742a2a;
   }
 
+  .xl\:placeholder-apple-100::placeholder {
+    color: rgb(142, 142, 147);
+  }
+
+  .xl\:placeholder-apple-200::placeholder {
+    color: rgb(99, 99, 102);
+  }
+
+  .xl\:placeholder-apple-300::placeholder {
+    color: rgb(72, 72, 74);
+  }
+
+  .xl\:placeholder-apple-400::placeholder {
+    color: rgb(58, 58, 60);
+  }
+
+  .xl\:placeholder-apple-500::placeholder {
+    color: rgb(44, 44, 46);
+  }
+
+  .xl\:placeholder-apple-600::placeholder {
+    color: rgb(28, 28, 30);
+  }
+
   .xl\:placeholder-orange-100::placeholder {
     color: #fffaf0;
   }
@@ -47627,6 +48871,30 @@ video {
 
   .xl\:focus\:placeholder-red-900:focus::placeholder {
     color: #742a2a;
+  }
+
+  .xl\:focus\:placeholder-apple-100:focus::placeholder {
+    color: rgb(142, 142, 147);
+  }
+
+  .xl\:focus\:placeholder-apple-200:focus::placeholder {
+    color: rgb(99, 99, 102);
+  }
+
+  .xl\:focus\:placeholder-apple-300:focus::placeholder {
+    color: rgb(72, 72, 74);
+  }
+
+  .xl\:focus\:placeholder-apple-400:focus::placeholder {
+    color: rgb(58, 58, 60);
+  }
+
+  .xl\:focus\:placeholder-apple-500:focus::placeholder {
+    color: rgb(44, 44, 46);
+  }
+
+  .xl\:focus\:placeholder-apple-600:focus::placeholder {
+    color: rgb(28, 28, 30);
   }
 
   .xl\:focus\:placeholder-orange-100:focus::placeholder {
@@ -48276,6 +49544,30 @@ video {
     color: #742a2a;
   }
 
+  .xl\:text-apple-100 {
+    color: rgb(142, 142, 147);
+  }
+
+  .xl\:text-apple-200 {
+    color: rgb(99, 99, 102);
+  }
+
+  .xl\:text-apple-300 {
+    color: rgb(72, 72, 74);
+  }
+
+  .xl\:text-apple-400 {
+    color: rgb(58, 58, 60);
+  }
+
+  .xl\:text-apple-500 {
+    color: rgb(44, 44, 46);
+  }
+
+  .xl\:text-apple-600 {
+    color: rgb(28, 28, 30);
+  }
+
   .xl\:text-orange-100 {
     color: #fffaf0;
   }
@@ -48648,6 +49940,30 @@ video {
     color: #742a2a;
   }
 
+  .xl\:hover\:text-apple-100:hover {
+    color: rgb(142, 142, 147);
+  }
+
+  .xl\:hover\:text-apple-200:hover {
+    color: rgb(99, 99, 102);
+  }
+
+  .xl\:hover\:text-apple-300:hover {
+    color: rgb(72, 72, 74);
+  }
+
+  .xl\:hover\:text-apple-400:hover {
+    color: rgb(58, 58, 60);
+  }
+
+  .xl\:hover\:text-apple-500:hover {
+    color: rgb(44, 44, 46);
+  }
+
+  .xl\:hover\:text-apple-600:hover {
+    color: rgb(28, 28, 30);
+  }
+
   .xl\:hover\:text-orange-100:hover {
     color: #fffaf0;
   }
@@ -49018,6 +50334,30 @@ video {
 
   .xl\:focus\:text-red-900:focus {
     color: #742a2a;
+  }
+
+  .xl\:focus\:text-apple-100:focus {
+    color: rgb(142, 142, 147);
+  }
+
+  .xl\:focus\:text-apple-200:focus {
+    color: rgb(99, 99, 102);
+  }
+
+  .xl\:focus\:text-apple-300:focus {
+    color: rgb(72, 72, 74);
+  }
+
+  .xl\:focus\:text-apple-400:focus {
+    color: rgb(58, 58, 60);
+  }
+
+  .xl\:focus\:text-apple-500:focus {
+    color: rgb(44, 44, 46);
+  }
+
+  .xl\:focus\:text-apple-600:focus {
+    color: rgb(28, 28, 30);
   }
 
   .xl\:focus\:text-orange-100:focus {

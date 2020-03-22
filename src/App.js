@@ -1,10 +1,12 @@
 import React from 'react';
 import { produce } from 'immer';
 import * as go from 'gojs';
+import * as uuid from 'uuid'
 
-import { Graph } from './Diagram';
-
-import './App.css';
+import { Toolbox } from './components/Toolbox';
+import { Inspector } from './components/Inspector';
+import { Console } from './components/Console';
+import { Graph } from './components/Diagram';
 
 const { ipcRenderer } = window.require("electron");
 
@@ -15,25 +17,9 @@ class App extends React.Component {
             console: "None",
             nodeDataArray: [
                 { 
-                  key: 0, title: 'Alpha', loc: '0 0', 
-                  inputs: [ "a", "b" ],
-                  outputs: [ "x" ] 
-                },
-                { 
-                  key: 1, title: 'Beta', loc: '150 0',
-                  inputs: [ "a" ],
-                  outputs: [ "x", "y" ] 
-                },
-                { 
-                  key: 2, title: 'Gamma', loc: '0 150',
-                  inputs: [ "a", "b" ],
-                  outputs: [ "x" ] 
-                },
-                { 
-                  key: 3, title: 'Delta', loc: '150 150',
-                  inputs: [ "a" ],
-                  outputs: [ "x", "y", "z" ] 
-                },
+                    key: uuid.v4(), name: "Compute", loc: '0 0', 
+                    type: "ComputeNode", inputs: ["in"], outputs: [], value: ""
+                }
             ],
             linkDataArray: [],
             modelData: {
@@ -56,6 +42,7 @@ class App extends React.Component {
         this.handleGraphChange = this.handleGraphChange.bind(this)
         this.handleModelChange = this.handleModelChange.bind(this)
         this.handleAddNode = this.handleAddNode.bind(this)
+        this.handleInputChange = this.handleInputChange.bind(this)
     }
 
     zrpcRecv(event, data) {
@@ -215,34 +202,78 @@ class App extends React.Component {
         );
     }
 
-    handleAddNode(event) {
+    handleAddNode(type) {
         this.setState(
             produce((draft_state) => {
                 draft_state.nodeDataArray.push({ 
-                    title: 'NEW', loc: '-100 -100', 
-                    inputs: [ "a", "b" ],
-                    outputs: [ "x" ] 
+                    key: uuid.v4(), ...type
                   })
+                this.refreshNodeIndex(draft_state.nodeDataArray)
+                })
+                )
+    }
+
+    /**
+     * Handle inspector changes, and on input field blurs, update node/link data state.
+     * @param path the path to the property being modified
+     * @param value the new value of that property
+     * @param isBlur whether the input event was a blur, indicating the edit is complete
+     */
+    handleInputChange(path, value, isBlur) {
+        this.setState(
+            produce((draft_state) => {
+                const data = draft_state.selectedData
+                data[path] = value;
+                if (isBlur) {
+                    const key = data.key;
+                    if (key < 0) {  // negative keys are links
+                        const idx = this.mapLinkKeyIdx.get(key);
+                        if (idx !== undefined && idx >= 0) {
+                            draft_state.linkDataArray[idx] = data;
+                            draft_state.skipsDiagramUpdate = false;
+                        }
+                    } else {
+                        const idx = this.mapNodeKeyIdx.get(key);
+                        if (idx !== undefined && idx >= 0) {
+                            draft_state.nodeDataArray[idx] = data;
+                            draft_state.skipsDiagramUpdate = false;
+                        }
+                    }
+                }
             })
-        )
+        );
     }
 
     render() {
         return (
-            <div className="app-component" >
-                <Graph 
-                    nodeDataArray={this.state.nodeDataArray}
-                    linkDataArray={this.state.linkDataArray}
-                    modelData={this.state.modelData}
-                    skipsDiagramUpdate={this.state.skipsDiagramUpdate}
-                    onDiagramEvent={this.handleGraphChange}
-                    onModelChange={this.handleModelChange}
-                />
-                <div className="bg-blue-500" style={{color: "white"}}>
-                    <h1>Python Data:</h1>
-                    <h2>
-                        {this.state.console}
-                    </h2>
+            <div className="app antialiased h-screen flex flex-col bg-apple-500 text-apple-100">
+                <div className="w-screen">
+                    <Toolbox 
+                        onToolAdd={this.handleAddNode}
+                    />
+                </div>
+                <div className="main h-full flex flex-row">
+                    <div className="graph bg-apple-600 w-3/4 shadow-inner shadow-xl">
+                        <Graph 
+                            nodeDataArray={this.state.nodeDataArray}
+                            linkDataArray={this.state.linkDataArray}
+                            modelData={this.state.modelData}
+                            skipsDiagramUpdate={this.state.skipsDiagramUpdate}
+                            onDiagramEvent={this.handleGraphChange}
+                            onModelChange={this.handleModelChange}
+                        />
+                    </div>
+                    <div className="inspector w-1/4 px-4 py-2 border-l-2 border-apple-400">
+                        <div className="h-1/2">
+                            <Inspector 
+                                selectedData={this.state.selectedData}
+                                onInputChange={this.handleInputChange}
+                            />
+                        </div>
+                        <div className="h-1/2">
+                            <Console console={this.state.console} />
+                        </div>
+                    </div>
                 </div>
             </div>
         )
