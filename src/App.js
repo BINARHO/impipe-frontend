@@ -315,7 +315,7 @@ class App extends React.Component {
                                 onCompute={this.handleComputeRequest}
                             />
                         </div>
-                        <div className="h-1/2 overflow-auto">
+                        <div className="relative h-1/2">
                             <Console console={this.state.console} />
                         </div>
                     </div>
