@@ -1,5 +1,5 @@
 # impipe-frontend
-GUI using ZeroRPC, ElectronsJS, ReactJS and GoJS for the impipe project
+GUI for the `impipe` project using ZeroRPC, ElectronsJS, ReactJS and GoJS
 
 ## Implementation
 
