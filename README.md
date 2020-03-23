@@ -7,3 +7,7 @@ GUI for the `impipe` project using ZeroRPC, ElectronsJS, ReactJS and GoJS
 
 ![arch](./arch.png)
 
+### Lifecycle
+
+![lifecycle](./lifecycle.png)
+
