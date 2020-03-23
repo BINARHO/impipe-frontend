@@ -23,7 +23,7 @@
     "electron": "../frontend/node_modules/.bin/electron ../frontend",
     "electron-dev": "ELECTRON_START_URL=http://localhost:3000 concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && npm run electron\"",
     "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css --watch"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -9,6 +9,7 @@ export class Graph extends React.Component {
     constructor(props) {
         super(props)
         this.diagramRef = React.createRef();
+        this.initDiagram = this.initDiagram.bind(this)
     }
 
     /**
@@ -40,7 +41,6 @@ export class Graph extends React.Component {
           $(go.Diagram,
             {
               'undoManager.isEnabled': true,  // must be set to allow for model change listening
-              // 'undoManager.maxHistoryLength': 0,  // uncomment disable undo/redo functionality
               'clickCreatingTool.archetypeNodeData': { text: 'new node', color: 'lightblue' },
               model: $(go.GraphLinksModel,
                 {
@@ -48,12 +48,20 @@ export class Graph extends React.Component {
                     linkFromPortIdProperty: "fromPort",  // required information:
                     linkToPortIdProperty: "toPort",      // identifies data property names  
     
-                    // key assignment to new nodes
+                    // assign UUID as key to new nodes
                     makeUniqueKeyFunction: (m, data) => {
                         let k = uuid.v4()
                         data.key = k;
                         return k;
-                      },
+                    },
+
+                    // assign UUID as key to new nodes
+                    makeUniqueLinkKeyFunction: (m, data) => {
+                        let k = uuid.v4()
+                        data.key = k;
+                        return k;
+                    },
+
                 })
             });
     
@@ -110,6 +118,9 @@ export class Graph extends React.Component {
     
         // disable initial animation
         diagram.animationManager.initialAnimationStyle = go.AnimationManager.None
+
+        // disable directed loops
+        diagram.validCycle = go.Diagram.CycleNotDirected
     
         return diagram;
     }

@@ -14,13 +14,8 @@ class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            console: "None",
-            nodeDataArray: [
-                { 
-                    key: uuid.v4(), name: "Compute", loc: '0 0', 
-                    type: "ComputeNode", inputs: ["in"], outputs: [], value: ""
-                }
-            ],
+            console: [],
+            nodeDataArray: [],
             linkDataArray: [],
             modelData: {
                 canRelink: true
@@ -42,13 +37,35 @@ class App extends React.Component {
         this.handleGraphChange = this.handleGraphChange.bind(this)
         this.handleModelChange = this.handleModelChange.bind(this)
         this.handleAddNode = this.handleAddNode.bind(this)
+        this.handleComputeRequest = this.handleComputeRequest.bind(this)
         this.handleInputChange = this.handleInputChange.bind(this)
+    }
+
+    componentDidMount() {
+        console.log("App componentDidMount")
+        if (this.state.nodeDataArray.length === 0) {
+            let compute_type = {
+                name: "Compute",
+                type: "ComputeNode",
+                inputs: ["in"],
+                outputs: [], 
+                props: {}
+            }
+            this.handleAddNode(compute_type)
+        }
     }
 
     zrpcRecv(event, data) {
         console.log(data)
         this.setState(
-            produce((draft_state) => {draft_state.console = data})
+            produce((draft_state) => {
+                draft_state.console.push(
+                    {
+                        "date": new Date(),
+                        "data": data,
+                    }
+                )
+            })
         )
     }
 
@@ -115,7 +132,9 @@ class App extends React.Component {
         const modifiedNodeMap = new Map();
         const modifiedLinkMap = new Map();
 
-        ipcRenderer.send("zrpc-send", obj)
+        ipcRenderer.send("zrpc-update", obj)
+
+        console.log(obj)
 
         this.setState(
             produce((draft) => {
@@ -203,14 +222,25 @@ class App extends React.Component {
     }
 
     handleAddNode(type) {
+        let newNode = { key: uuid.v4(), loc: "0 0", ...type }
         this.setState(
             produce((draft_state) => {
-                draft_state.nodeDataArray.push({ 
-                    key: uuid.v4(), ...type
-                  })
+                draft_state.nodeDataArray.push(newNode)
                 this.refreshNodeIndex(draft_state.nodeDataArray)
-                })
-                )
+            })
+        )
+        let events = {
+            'insertedNodeKeys': [newNode.key],
+            'modifiedNodeData': [newNode]
+        }
+        this.handleModelChange(events)
+    }
+
+    handleComputeRequest() {
+        const event = {
+            "selectedData": this.state.selectedData.key
+        }
+        ipcRenderer.send("zrpc-compute", event)
     }
 
     /**
@@ -223,7 +253,13 @@ class App extends React.Component {
         this.setState(
             produce((draft_state) => {
                 const data = draft_state.selectedData
-                data[path] = value;
+                if (path in data) {
+                    data[path] = value;
+                } else if (path in data.props) {
+                    data.props[path] = value
+                } else {
+                    throw new Error("wierd path: " + path)
+                }
                 if (isBlur) {
                     const key = data.key;
                     if (key < 0) {  // negative keys are links
@@ -242,6 +278,13 @@ class App extends React.Component {
                 }
             })
         );
+        if (isBlur) {
+            const data = this.state.selectedData
+            let events = {
+                'modifiedNodeData': [data]
+            }
+            this.handleModelChange(events)
+        }
     }
 
     render() {
@@ -250,6 +293,7 @@ class App extends React.Component {
                 <div className="w-screen">
                     <Toolbox 
                         onToolAdd={this.handleAddNode}
+                        onCompute={this.handleComputeRequest}
                     />
                 </div>
                 <div className="main h-full flex flex-row">
@@ -264,13 +308,14 @@ class App extends React.Component {
                         />
                     </div>
                     <div className="inspector w-1/4 px-4 py-2 border-l-2 border-apple-400">
-                        <div className="h-1/2">
+                        <div className="h-1/2 overflow-auto">
                             <Inspector 
                                 selectedData={this.state.selectedData}
                                 onInputChange={this.handleInputChange}
+                                onCompute={this.handleComputeRequest}
                             />
                         </div>
-                        <div className="h-1/2">
+                        <div className="h-1/2 overflow-auto">
                             <Console console={this.state.console} />
                         </div>
                     </div>
