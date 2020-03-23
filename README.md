@@ -1,7 +1,7 @@
 # impipe-frontend
 GUI for the `impipe` project using ZeroRPC, ElectronsJS, ReactJS and GoJS
 
-## Implementation
+## ![screenshot](./screenshot.png)Implementation
 
 ### Architecture
 
