@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../assets/scrollbar.css'
+
 export class Console extends React.Component {
     getDate() {
         const date = new Date()
@@ -32,7 +34,7 @@ export class Console extends React.Component {
         return (
             <div className="absolute inset-0 console h-full min-h-0 flex-grow-0 flex flex-col">
                 <h1 className="font-bold mb-2 border-b 2 border-apple-400">Python Console:</h1>
-                <div className="overflow-auto h-full max-h-full flex flex-col flex-grow-0">
+                <div className="overflow-auto h-full max-h-full flex flex-col flex-grow-0 scrollable">
                     {this.renderConsole()}
                 </div>
             </div>
